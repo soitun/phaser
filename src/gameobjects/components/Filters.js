@@ -251,6 +251,9 @@ if (typeof WEBGL_RENDERER)
 
             this.filterCamera = new Camera(0, 0, 1, 1).setScene(scene, false);
 
+            // Set up the filter camera to compute an inverse matrix for the object.
+            this.filterCamera.isObjectInversion = true;
+
             if (scene.game.config.roundPixels)
             {
                 this.filterCamera.roundPixels = true;

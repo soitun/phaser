@@ -77,6 +77,18 @@ var Camera = new Class({
         };
 
         /**
+         * Is this Camera for Game Object transform inversion?
+         * This is used by the `Filters` component to cancel out the transform
+         * of the Game Object when rendering the object for filtering.
+         *
+         * @name Phaser.Cameras.Scene2D.Camera#isObjectInversion
+         * @type {boolean}
+         * @default false
+         * @since 4.0.0
+         */
+        this.isObjectInversion = false;
+
+        /**
          * Does this Camera allow the Game Objects it renders to receive input events?
          *
          * @name Phaser.Cameras.Scene2D.Camera#inputEnabled
@@ -590,9 +602,23 @@ var Camera = new Class({
         var matrix = this.matrix;
         var matrixExternal = this.matrixExternal;
 
-        // Apply view transforms in order IRST.
-        matrix.applyITRS(originX, originY, this.rotation, zoomX, zoomY);
-        matrix.translate(-sx - originX, -sy - originY);
+        if (this.isObjectInversion)
+        {
+            // Game Object filter camera
+            matrix.loadIdentity();
+            matrix.translate(originX, originY);
+            matrix.scale(zoomX, zoomY);
+            matrix.rotate(this.rotation);
+            matrix.translate(-sx - originX, -sy - originY);
+        }
+        else
+        {
+            // Regular camera
+            // Apply view transforms in order IRST.
+            matrix.applyITRS(originX, originY, this.rotation, zoomX, zoomY);
+            matrix.translate(-sx - originX, -sy - originY);
+        }
+
 
         matrixExternal.applyITRS(this.x, this.y, 0, 1, 1);
 
