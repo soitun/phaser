@@ -1,6 +1,6 @@
 # Version 4.0.0 - in dev
 
-Phaser v4 contains Phaser Beam, our brand-new and highly efficient WebGL renderer. The entire renderer from Phaser +v3 has been replaced.
+Phaser v4 contains our brand-new and highly efficient WebGL renderer. The entire renderer from Phaser +v3 has been replaced.
 
 Other changes include the following:
 
