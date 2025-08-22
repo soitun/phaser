@@ -16,11 +16,11 @@ Interested in learning more? Click the image below to watch our intro video.
 
 [![YouTube](http://i.ytimg.com/vi/jHTRu4iNTcA/maxresdefault.jpg)](https://www.youtube.com/watch?v=jHTRu4iNTcA)
 
-## v4 Release Candidate 4
+## v4 Release Candidate 5
 
-You are looking at Release Candidate 4 of Phaser v4. There are large internal differences between Phaser v3 and v4, although the public API has remained mostly, but not entirely, the same.
+You are looking at Release Candidate 5 of Phaser v4. There are large internal differences between Phaser v3 and v4, although the public API has remained mostly, but not entirely, the same.
 
-Please only use this release if you wish to help beta test Phaser v4.
+Please only use this release if you wish to help test Phaser v4.
 
 Phaser v4 contains our brand-new and highly efficient WebGL renderer. The entire renderer from v3 has been replaced.
 
@@ -65,7 +65,6 @@ Cheers,
 **Learn** By browsing our [API Docs](https://docs.phaser.io) or [Support Forum](https://phaser.discourse.group/)<br />
 **Be Social:** Join us on [Discord](https://discord.gg/phaser) and [Reddit](https://phaser.io/community/reddit) or follow us on [Twitter](https://twitter.com/phaser_)<br />
 **Code Examples?** We've over 2000 [Examples](https://phaser.io/examples) to learn from<br />
-**Read** the weekly [Phaser World](https://phaser.world) Newsletter<br />
 
 Powered by coffee, anime, pixels and love.
 
