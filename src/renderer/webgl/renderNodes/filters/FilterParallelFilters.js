@@ -99,8 +99,21 @@ var FilterParallelFilters = new Class({
                 }
             }
 
-            // Blend the top and bottom filters.
             inputDrawingContext.unlock(this);
+
+            // Check whether the input is no longer in use,
+            // and won't be released automatically below.
+            // If it is the bottom context, it will be released by the Blend.
+            // If it is the top context, it will be released directly.
+            if (
+                inputDrawingContext !== bottomContext &&
+                inputDrawingContext !== topContext
+            )
+            {
+                inputDrawingContext.release();
+            }
+
+            // Blend the top and bottom filters.
             var blendController = controller.blend;
             blendController.glTexture = topContext.texture;
             filter = this.manager.getNode('FilterBlend');
