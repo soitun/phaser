@@ -827,6 +827,11 @@ var Tilemap = new Class({
 
         var objects = objectLayer.objects;
 
+        if (config.sortByY))
+        {
+            objects.sort((a,b) => a.y > b.y ? 1 : -1)
+        }
+
         for (var c = 0; c < config.length; c++)
         {
             var singleConfig = config[ c ];
