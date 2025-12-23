@@ -91,6 +91,7 @@ class Parser {
                 case 'Phaser.Scale.ScaleModes':
                 case 'Phaser.Scale.Zoom':
                 case 'Phaser.Textures.FilterMode':
+                case 'Phaser.Textures.WrapMode':
                 case 'Phaser.Tilemaps.Orientation':
                 case 'Phaser.Tweens.States':
                     // console.log('Forcing enum for ' + doclet.longname);
@@ -315,12 +316,16 @@ class Parser {
         return obj;
     }
     createFunction(doclet) {
+        var _a;
         let returnType = dom.type.void;
         if (doclet.returns) {
             returnType = this.parseType(doclet.returns[0]);
         }
         let obj = dom.create.function(doclet.name, null, returnType);
         this.setParams(doclet, obj);
+        if ((_a = doclet.returns) === null || _a === void 0 ? void 0 : _a.length) {
+            obj.jsDocComment += `\n@returns ${doclet.returns[0].description}`;
+        }
         this.processGeneric(doclet, obj, obj.parameters);
         this.processFlags(doclet, obj);
         return obj;
