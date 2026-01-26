@@ -28,6 +28,14 @@ vec4 applyTint(vec4 texture)
             unpremultTexture.b < 0.5 ? 2.0 * outTint.r * unpremultTexture.b : 1.0 - 2.0 * (1.0 - outTint.r) * (1.0 - unpremultTexture.b)
         );
     }
+    else if (outTintEffect == 6.0) {
+        // Hard light tint
+        color = vec3(
+            outTint.b < 0.5 ? 2.0 * outTint.b * unpremultTexture.r : 1.0 - 2.0 * (1.0 - outTint.b) * (1.0 - unpremultTexture.r),
+            outTint.g < 0.5 ? 2.0 * outTint.g * unpremultTexture.g : 1.0 - 2.0 * (1.0 - outTint.g) * (1.0 - unpremultTexture.g),
+            outTint.r < 0.5 ? 2.0 * outTint.r * unpremultTexture.b : 1.0 - 2.0 * (1.0 - outTint.r) * (1.0 - unpremultTexture.b)
+        );
+    }
 
     return vec4(color * alpha, alpha);
 }

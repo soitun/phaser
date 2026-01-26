@@ -72,5 +72,16 @@ module.exports = {
      * @const
      * @since 4.0.0
      */
-    OVERLAY: 5
+    OVERLAY: 5,
+
+    /**
+     * Hard light tint mode. The tint color brightens light areas and darkens dark areas.
+     * This is like overlay, but with the tint color and texture color swapped.
+     *
+     * @name Phaser.TintModes.HARD_LIGHT
+     * @type {number}
+     * @const
+     * @since 4.0.0
+     */
+    HARD_LIGHT: 6
 };

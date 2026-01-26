@@ -908,6 +908,7 @@ var ParticleEmitter = new Class({
          * - Phaser.TintModes.ADD
          * - Phaser.TintModes.SCREEN
          * - Phaser.TintModes.OVERLAY
+         * - Phaser.TintModes.HARD_LIGHT
          *
          * @name Phaser.GameObjects.Particles.ParticleEmitter#tintFill
          * @type {Phaser.TintModes}

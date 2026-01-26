@@ -395,6 +395,7 @@ var TilemapLayer = new Class({
      * - Phaser.TintModes.ADD
      * - Phaser.TintModes.SCREEN
      * - Phaser.TintModes.OVERLAY
+     * - Phaser.TintModes.HARD_LIGHT
      *
      * Call this method with no parameters to reset the tint fill mode to the default.
      *

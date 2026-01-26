@@ -297,6 +297,7 @@ var NineSlice = new Class({
          * - Phaser.TintModes.ADD
          * - Phaser.TintModes.SCREEN
          * - Phaser.TintModes.OVERLAY
+         * - Phaser.TintModes.HARD_LIGHT
          *
          * @name Phaser.GameObjects.NineSlice#tintFill
          * @type {Phaser.TintModes}
@@ -677,6 +678,7 @@ var NineSlice = new Class({
      * - Phaser.TintModes.ADD
      * - Phaser.TintModes.SCREEN
      * - Phaser.TintModes.OVERLAY
+     * - Phaser.TintModes.HARD_LIGHT
      *
      * There was a `setTintFill` method in Phaser 3, but it has been
      * replaced with this method which has sole responsibility for setting the tint fill mode.

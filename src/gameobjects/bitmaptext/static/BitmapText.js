@@ -534,6 +534,7 @@ var BitmapText = new Class({
      * - Phaser.TintModes.ADD
      * - Phaser.TintModes.SCREEN
      * - Phaser.TintModes.OVERLAY
+     * - Phaser.TintModes.HARD_LIGHT
      *
      * You can provide either one color value,
      * in which case the whole character will be tinted in that color. Or you can provide a color
@@ -651,6 +652,7 @@ var BitmapText = new Class({
      * - Phaser.TintModes.ADD
      * - Phaser.TintModes.SCREEN
      * - Phaser.TintModes.OVERLAY
+     * - Phaser.TintModes.HARD_LIGHT
      *
      * You can provide either one color value,
      * in which case the whole character will be tinted in that color. Or you can provide a color

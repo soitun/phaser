@@ -312,6 +312,7 @@ var Tile = new Class({
          * - Phaser.TintModes.ADD
          * - Phaser.TintModes.SCREEN
          * - Phaser.TintModes.OVERLAY
+         * - Phaser.TintModes.HARD_LIGHT
          *
          * @name Phaser.Tilemaps.Tile#tintFill
          * @type {Phaser.TintModes}

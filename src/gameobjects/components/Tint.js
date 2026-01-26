@@ -74,6 +74,7 @@ var Tint = {
      * - Phaser.TintModes.ADD
      * - Phaser.TintModes.SCREEN
      * - Phaser.TintModes.OVERLAY
+     * - Phaser.TintModes.HARD_LIGHT
      *
      * Note that in Phaser 3, this was a boolean.
      * It is now a number, with MULTIPLY and FILL corresponding to false and true respectively.

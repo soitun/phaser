@@ -177,6 +177,7 @@ var Rope = new Class({
          * - Phaser.TintModes.ADD
          * - Phaser.TintModes.SCREEN
          * - Phaser.TintModes.OVERLAY
+         * - Phaser.TintModes.HARD_LIGHT
          *
          * @name Phaser.GameObjects.Rope#tintFill
          * @type {Phaser.TintModes}
@@ -451,6 +452,7 @@ var Rope = new Class({
      * - Phaser.TintModes.ADD
      * - Phaser.TintModes.SCREEN
      * - Phaser.TintModes.OVERLAY
+     * - Phaser.TintModes.HARD_LIGHT
      *
      * See the `setColors` method for details of how to color each of the vertices.
      *
