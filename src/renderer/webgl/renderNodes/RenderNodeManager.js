@@ -37,6 +37,7 @@ var FilterBokeh = require('./filters/FilterBokeh');
 var FilterColorMatrix = require('./filters/FilterColorMatrix');
 var FilterDisplacement = require('./filters/FilterDisplacement');
 var FilterGlow = require('./filters/FilterGlow');
+var FilterKey = require('./filters/FilterKey');
 var FilterMask = require('./filters/FilterMask');
 var FilterParallelFilters = require('./filters/FilterParallelFilters');
 var FilterPixelate = require('./filters/FilterPixelate');
@@ -171,6 +172,7 @@ var RenderNodeManager = new Class({
             FilterColorMatrix: FilterColorMatrix,
             FilterDisplacement: FilterDisplacement,
             FilterGlow: FilterGlow,
+            FilterKey: FilterKey,
             FilterMask: FilterMask,
             FilterParallelFilters: FilterParallelFilters,
             FilterPixelate: FilterPixelate,

@@ -13,6 +13,7 @@ var Bokeh = require('../../filters/Bokeh');
 var ColorMatrix = require('../../filters/ColorMatrix');
 var Displacement = require('../../filters/Displacement');
 var Glow = require('../../filters/Glow');
+var Key = require('../../filters/Key');
 var Mask = require('../../filters/Mask');
 var ParallelFilters = null;
 var Pixelate = require('../../filters/Pixelate');
@@ -38,6 +39,7 @@ var Threshold = require('../../filters/Threshold');
  * * Color Matrix
  * * Displacement
  * * Glow
+ * * Key
  * * Mask
  * * Parallel Filters
  * * Pixelate
@@ -418,6 +420,32 @@ var FilterList = new Class({
             quality,
             distance
         ));
+    },
+
+    /**
+     * Adds a Key effect.
+     *
+     * The Key effect removes or isolates a specific color from an image.
+     * It can be used to remove a background color from an image,
+     * or to isolate a specific color for further processing.
+     *
+     * By default, Key will remove pixels that match the key color.
+     * You can instead keep only the matching pixels by setting `isolate`.
+     *
+     * The threshold and feather settings control how closely the key color matches.
+     * A match is measured by "distance between color vectors";
+     * that is, how close the RGB values of the pixel are to the RGB values of the key color.
+     *
+     * @method Phaser.GameObjects.Components.FilterList#addKey
+     * @since 4.0.0
+     *
+     * @param {Phaser.Types.Filters.KeyConfig} [config] - The configuration object for the Key effect.
+     *
+     * @returns {Phaser.Filters.Key} The new Key filter controller.
+     */
+    addKey: function (config)
+    {
+        return this.add(new Key(this.camera, config));
     },
 
     /**
