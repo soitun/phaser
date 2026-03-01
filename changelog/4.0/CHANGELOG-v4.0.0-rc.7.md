@@ -21,7 +21,7 @@
 - `Display.ColorBand` describes a transition between two colors. Intended for use in gradients.
 - `Display.ColorRamp` describes a range of colors using ColorBands. Intended for use in gradients.
 - `GameObject#isDestroyed` flag helps you avoid errors when accessing an object that might have removed expected properties during destruction.
-- `GameObject.Gradient` is a new game object which renders gradients.
+- `GameObjects.Gradient` is a new game object which renders gradients.
   - Gradient shapes include:
     - `LINEAR`
     - `BILINEAR`
@@ -34,6 +34,7 @@
     - `SAWTOOTH`: gradient starts over every time it completes.
     - `TRIANGULAR`: gradient reverses direction every time it gets to the end or start.
   - Optional Interleaved Gradient Noise based dithering to eliminate banding.
+- `GameObjects.NineSlice` has two new parameters: `tileX`, `tileY`, which allow non-corner regions of the NineSlice to tile instead of stretch. Some stretching is still applied to keep the tile count a whole number. Thanks to @skhoroshavin for this contribution!
 - `Tint` is overhauled.
   - `tint` and `setTint()` now purely affect the color settings.
     - Previously, both would silently deactivate fill mode.

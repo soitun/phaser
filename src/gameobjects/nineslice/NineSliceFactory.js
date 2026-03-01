@@ -89,8 +89,10 @@ var GameObjectFactory = require('../GameObjectFactory');
  * @param {number} [height=256] - The height of the Nine Slice Game Object. If this is a 3 slice object the height will be fixed to the height of the texture and cannot be changed.
  * @param {number} [leftWidth=10] - The size of the left vertical column (A).
  * @param {number} [rightWidth=10] - The size of the right vertical column (B).
- * @param {number} [topHeight=0] - The size of the top horiztonal row (C). Set to zero or undefined to create a 3 slice object.
- * @param {number} [bottomHeight=0] - The size of the bottom horiztonal row (D). Set to zero or undefined to create a 3 slice object.
+ * @param {number} [topHeight=0] - The size of the top horizontal row (C). Set to zero or undefined to create a 3 slice object.
+ * @param {number} [bottomHeight=0] - The size of the bottom horizontal row (D). Set to zero or undefined to create a 3 slice object.
+ * @param {boolean} [tileX=false] - Whether to tile the horizontal regions instead of stretching them. Some stretching will still occur to keep the tile count a whole number.
+ * @param {boolean} [tileY=false] - Whether to tile the vertical regions instead of stretching them. Some stretching will still occur to keep the tile count a whole number.
  *
  * @return {Phaser.GameObjects.NineSlice} The Game Object that was created.
  */

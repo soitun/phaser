@@ -283,7 +283,6 @@ var NineSlice = new Class({
          * Indicates whether the scalable horizontal regions of the Nine Slice
          * are repeated across the object instead of being stretched. Each tile
          * is still slightly stretched so that it remains visible in full.
-         * Do not modify directly.
          *
          * @name Phaser.GameObjects.NineSlice#tileX
          * @type {boolean}
@@ -296,7 +295,6 @@ var NineSlice = new Class({
          * Indicates whether the scalable vertical regions of the Nine Slice
          * are repeated across the object instead of being stretched. Each tile
          * is still slightly stretched so that it remains visible in full.
-         * Do not modify directly.
          *
          * @name Phaser.GameObjects.NineSlice#tileY
          * @type {boolean}
@@ -583,8 +581,8 @@ var NineSlice = new Class({
 
     /**
      * Recalculates all of the vertices in this Nine Slice Game Object
-     * based on the `leftWidth`, `rightWidth`, `topHeight` and `bottomHeight`
-     * properties, combined with the Game Object size.
+     * based on the `leftWidth`, `rightWidth`, `topHeight`, `bottomHeight`,
+     * `tileX` and `tileY` properties, combined with the Game Object size.
      *
      * This method is called automatically when this object is created
      * or if it's origin is changed.
