@@ -1055,17 +1055,17 @@ var Text = new Class({
     },
 
     /**
-     * Set the resolution used by this Text object.
+     * Set the resolution of the Texture used by this Text object.
      *
-     * It allows for much clearer text on High DPI devices, at the cost of memory because it uses larger
-     * internal Canvas textures for the Text.
+     * Setting resolution above 1 is useful only if you're scaling up this Text object (or an ancestor) or zooming a Camera on it.
+     * Otherwise, any extra detail in the Texture would just be lost during rendering.
      *
-     * Therefore, please use with caution, as the more high res Text you have, the more memory it uses.
+     * Please use with caution, as the more high-resolution Text you have, the more memory it uses.
      *
      * @method Phaser.GameObjects.Text#setResolution
      * @since 3.12.0
      *
-     * @param {number} value - The resolution for this Text object to use.
+     * @param {number} value - The resolution for this Text object to use, relative to 1.
      *
      * @return {this} This Text object.
      */
