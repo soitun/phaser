@@ -13,7 +13,7 @@ var Device = require('../../device');
  * @ignore
  *
  * @param {*} a - The first item to test.
- * @param {*} b - The second itemt to test.
+ * @param {*} b - The second item to test.
  *
  * @return {boolean} True if they localCompare, otherwise false.
  */
