@@ -79,7 +79,7 @@ var Quaternion = new Class({
          *
          * @name Phaser.Math.Quaternion#_w
          * @type {number}
-         * @default 0
+         * @default 1
          * @private
          * @since 3.50.0
          */
@@ -493,7 +493,7 @@ var Quaternion = new Class({
     },
 
     /**
-     * Reset this Matrix to an identity (default) Quaternion.
+     * Reset this Quaternion to an identity (default) Quaternion.
      *
      * @method Phaser.Math.Quaternion#identity
      * @since 3.0.0
