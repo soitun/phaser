@@ -12,7 +12,7 @@
  * this implementation.
  *
  * Note that we're not guaranteed that there will be any 'normal' tiles if the only
- * thing in the tilset are wangtile definitions, so this has to be parsed separately.
+ * thing in the tileset are wangtile definitions, so this has to be parsed separately.
  *
  * See https://doc.mapeditor.org/en/latest/manual/using-wang-tiles/ for more information.
  *
