@@ -13,7 +13,7 @@ var GameObjectFactory = require('../GameObjectFactory');
  * Note: This method will only be available if the CaptureFrame Game Object has been built into Phaser.
  *
  * @method Phaser.GameObjects.GameObjectFactory#captureFrame
- * @since 3.0.0
+ * @since 4.0.0
  *
  * @param {string} key - The key of the texture to create from this CaptureFrame.
  *
