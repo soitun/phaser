@@ -22,7 +22,7 @@ var tempTransformer = { quad: new Float32Array(8) };
  * The object will not render if any of its renderFlags are set or it is being actively filtered out by the Camera.
  * This method should not be called directly. It is a utility function of the Render module.
  *
- * @method Phaser.GameObjects.Particles.Emitter#renderWebGL
+ * @method Phaser.GameObjects.Particles.ParticleEmitter#renderWebGL
  * @since 3.60.0
  * @private
  *
