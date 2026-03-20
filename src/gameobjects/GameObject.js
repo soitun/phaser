@@ -400,7 +400,7 @@ var GameObject = new Class({
      * @genericUse {(string|T)} - [key]
      *
      * @param {(string|object)} key - The key to set the value for. Or an object of key value pairs. If an object the `data` argument is ignored.
-     * @param {*} [data] - The value to set for the given key. If an object is provided as the key this argument is ignored.
+     * @param {*} [value] - The value to set for the given key. If an object is provided as the key this argument is ignored.
      *
      * @return {this} This GameObject.
      */
@@ -624,7 +624,7 @@ var GameObject = new Class({
     /**
      * This callback is invoked when this Game Object is added to a Scene.
      *
-     * Can be overriden by custom Game Objects, but be aware of some Game Objects that
+     * Can be overridden by custom Game Objects, but be aware of some Game Objects that
      * will use this, such as Sprites, to add themselves into the Update List.
      *
      * You can also listen for the `ADDED_TO_SCENE` event from this Game Object.
@@ -639,8 +639,8 @@ var GameObject = new Class({
     /**
      * This callback is invoked when this Game Object is removed from a Scene.
      *
-     * Can be overriden by custom Game Objects, but be aware of some Game Objects that
-     * will use this, such as Sprites, to removed themselves from the Update List.
+     * Can be overridden by custom Game Objects, but be aware of some Game Objects that
+     * will use this, such as Sprites, to remove themselves from the Update List.
      *
      * You can also listen for the `REMOVED_FROM_SCENE` event from this Game Object.
      *
@@ -738,7 +738,7 @@ var GameObject = new Class({
      * @method Phaser.GameObjects.GameObject#setVertexRoundMode
      * @since 4.0.0
      * @param {string} mode - The vertex round mode to set. Can be 'off', 'safe', 'safeAuto', 'full' or 'fullAuto'.
-     * @returns {this} This GameObject.
+     * @return {this} This GameObject.
      */
     setVertexRoundMode: function (mode)
     {
@@ -809,7 +809,7 @@ var GameObject = new Class({
      *
      * You can query which list it is on by looking at the `Phaser.GameObjects.GameObject#displayList` property.
      *
-     * If a Game Object isn't on any display list, it will not be rendered. If you just wish to temporarly
+     * If a Game Object isn't on any display list, it will not be rendered. If you just wish to temporarily
      * disable it from rendering, consider using the `setVisible` method, instead.
      *
      * @method Phaser.GameObjects.GameObject#addToDisplayList
@@ -875,12 +875,12 @@ var GameObject = new Class({
     /**
      * Removes this Game Object from the Display List it is currently on.
      *
-     * A Game Object can only exist on one Display List at any given time, but may move freely removed
+     * A Game Object can only exist on one Display List at any given time, but may be freely removed
      * and added back at a later stage.
      *
      * You can query which list it is on by looking at the `Phaser.GameObjects.GameObject#displayList` property.
      *
-     * If a Game Object isn't on any Display List, it will not be rendered. If you just wish to temporarly
+     * If a Game Object isn't on any Display List, it will not be rendered. If you just wish to temporarily
      * disable it from rendering, consider using the `setVisible` method, instead.
      *
      * @method Phaser.GameObjects.GameObject#removeFromDisplayList
