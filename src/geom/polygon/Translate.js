@@ -5,7 +5,7 @@
  */
 
 /**
- * Tranlates the points of the given Polygon.
+ * Translates the points of the given Polygon.
  *
  * @function Phaser.Geom.Polygon.Translate
  * @since 3.50.0
