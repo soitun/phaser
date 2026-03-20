@@ -255,7 +255,7 @@ var CompressedTextureFile = new Class({
     },
 
     /**
-     * Adds all of the multi-file entties to their target caches upon successful loading and processing.
+     * Adds all of the multi-file entries to their target caches upon successful loading and processing.
      *
      * @method Phaser.Loader.FileTypes.CompressedTextureFile#addMultiToCache
      * @since 3.60.0
