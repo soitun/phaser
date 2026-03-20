@@ -123,7 +123,7 @@ var Vector4 = new Class({
     /**
      * Check whether this Vector is equal to a given Vector.
      *
-     * Performs a strict quality check against each Vector's components.
+     * Performs a strict equality check against each Vector's components.
      *
      * @method Phaser.Math.Vector4#equals
      * @since 3.0.0
@@ -146,7 +146,7 @@ var Vector4 = new Class({
      * @param {(number|object)} x - The x value to set for this Vector, or an object containing x, y, z and w components.
      * @param {number} y - The y value to set for this Vector.
      * @param {number} z - The z value to set for this Vector.
-     * @param {number} w - The z value to set for this Vector.
+     * @param {number} w - The w value to set for this Vector.
      *
      * @return {Phaser.Math.Vector4} This Vector4.
      */
