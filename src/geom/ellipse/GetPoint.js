@@ -12,7 +12,7 @@ var Vector2 = require('../../math/Vector2');
 /**
  * Returns a Vector2 object containing the coordinates of a point on the circumference of the Ellipse
  * based on the given angle normalized to the range 0 to 1. I.e. a value of 0.5 will give the point
- * at 180 degrees around the circle.
+ * at 180 degrees around the ellipse.
  *
  * @function Phaser.Geom.Ellipse.GetPoint
  * @since 3.0.0
