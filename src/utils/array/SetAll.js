@@ -9,7 +9,7 @@ var SafeRange = require('./SafeRange');
 /**
  * Scans the array for elements with the given property. If found, the property is set to the `value`.
  *
- * For example: `SetAll('visible', true)` would set all elements that have a `visible` property to `false`.
+ * For example: `SetAll('visible', true)` would set all elements that have a `visible` property to `true`.
  *
  * Optionally you can specify a start and end index. For example if the array had 100 elements,
  * and you set `startIndex` to 0 and `endIndex` to 50, it would update only the first 50 elements.
