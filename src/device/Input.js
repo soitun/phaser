@@ -15,7 +15,7 @@ var Browser = require('./Browser');
  * @typedef {object} Phaser.Device.Input
  * @since 3.0.0
  *
- * @property {?string} wheelType - The newest type of Wheel/Scroll event supported: 'wheel', 'mousewheel', 'DOMMouseScroll'
+ * @property {?string} wheelEvent - The newest type of Wheel/Scroll event supported: 'wheel', 'mousewheel', 'DOMMouseScroll'
  * @property {boolean} gamepads - Is navigator.getGamepads available?
  * @property {boolean} mspointer - Is mspointer available?
  * @property {boolean} touch - Is touch available?
