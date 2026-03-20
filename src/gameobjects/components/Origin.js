@@ -36,7 +36,6 @@ var Origin = {
      *
      * @name Phaser.GameObjects.Components.Origin#originX
      * @type {number}
-     * @readonly
      * @default 0.5
      * @since 3.0.0
      */
@@ -51,7 +50,6 @@ var Origin = {
      *
      * @name Phaser.GameObjects.Components.Origin#originY
      * @type {number}
-     * @readonly
      * @default 0.5
      * @since 3.0.0
      */
