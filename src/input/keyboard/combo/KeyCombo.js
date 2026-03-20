@@ -174,7 +174,7 @@ var KeyCombo = new Class({
          *
          * @name Phaser.Input.Keyboard.KeyCombo#resetOnWrongKey
          * @type {boolean}
-         * @default 0
+         * @default true
          * @since 3.0.0
          */
         this.resetOnWrongKey = GetFastValue(config, 'resetOnWrongKey', true);
