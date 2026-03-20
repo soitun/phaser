@@ -90,7 +90,7 @@ var ImageLight = new Class({
         this.viewMatrix = new Matrix4();
 
         /**
-         * The initial of the model in radians.
+         * The initial rotation of the model in radians.
          * This will be overridden by the modelRotationSource if it is set.
          *
          * @name Phaser.Filters.ImageLight#modelRotation
