@@ -360,7 +360,7 @@ rect.closePath = true;   // close stroke path (default true)
 
 5. **Line shape is stroke-only.** The Line shape does not support fill. Its constructor takes `strokeColor`/`strokeAlpha` (not fillColor).
 
-6. **Grid and IsoBox/IsoTriangle are fill-only.** These shapes cannot be stroked.
+6. **IsoBox/IsoTriangle are fill-only.** These shapes cannot be stroked. Grid supports outline strokes via its constructor parameters (`outlineFillColor`, `outlineFillAlpha`).
 
 7. **generateTexture uses Canvas API.** Gradient fills (`fillGradientStyle`) will not appear in textures generated with `generateTexture`. Only Canvas-compatible features are captured.
 
