@@ -61,7 +61,7 @@ this.cameras.default      // Un-transformed utility camera (not in the cameras a
 | `resetAll` | `()` | Destroy all cameras and create one fresh default camera. |
 | `resize` | `(width, height)` | Resize all cameras to given dimensions. |
 
-**Camera limit:** The manager supports up to 31 cameras that can use `ignore()` for Game Object exclusion (IDs are bitmasks). Cameras beyond 31 get ID 0 and cannot exclude objects.
+**Camera limit:** The manager supports up to 32 cameras that can use `ignore()` for Game Object exclusion (IDs are bitmasks). Cameras beyond 32 get ID 0 and cannot exclude objects.
 
 ### Main Camera
 
@@ -536,7 +536,7 @@ Each effect is accessible as a property on Camera: `fadeEffect`, `flashEffect`, 
 
 5. **`startFollow` snaps immediately on first call.** The camera jumps to the target position, then lerps from there. To avoid a visible snap, set scroll to the target position before calling `startFollow`.
 
-6. **Ignore list limit of 31 cameras.** Only the first 31 cameras created get unique bitmask IDs for `ignore()`. Camera 32+ gets ID 0 and cannot use Game Object exclusion.
+6. **Ignore list limit of 32 cameras.** Only the first 32 cameras created get unique bitmask IDs for `ignore()`. Camera 33+ gets ID 0 and cannot use Game Object exclusion.
 
 7. **`roundPixels` and non-integer zoom.** Setting `roundPixels: true` only works correctly when zoom is an integer. Non-integer zoom with `roundPixels` causes jitter.
 
