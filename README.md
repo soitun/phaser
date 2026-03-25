@@ -16,15 +16,29 @@ Interested in learning more? Click the image below to watch our intro video.
 
 [![YouTube](http://i.ytimg.com/vi/jHTRu4iNTcA/maxresdefault.jpg)](https://www.youtube.com/watch?v=jHTRu4iNTcA)
 
-## v4 Release Candidate 5
+## Phaser 4 - Release Candidate 7
 
-You are looking at Release Candidate 6 of Phaser v4. There are large internal differences between Phaser v3 and v4, although the public API has remained mostly, but not entirely, the same.
+Phaser 4 draws ever closer to its official release with **RC7** - the most feature-rich release candidate yet. Originally planned for other projects, we adapted everything that made sense directly into Phaser. The result is a framework that's already more powerful and more reliable than Phaser 3 ever was.
 
-Please only use this release if you wish to help test Phaser 4.
+### What's New in RC7
 
-Phaser 4 contains our brand-new and highly efficient WebGL renderer. The entire renderer from v3 has been replaced.
+**Tint Overhaul** - Tint has been completely reworked. Color and mode are now separate concerns, with 6 tint modes available: MULTIPLY, FILL, ADD, SCREEN, OVERLAY, and HARD_LIGHT. The new `setTintMode()` method gives you explicit control, and FILL mode now works correctly with partially transparent pixels.
 
-We also took this opportunity to make other Quality-of-Life updates internally, which you can find detailed in [this Change Log](changelog/4.0/CHANGELOG-v4.0.0.md).
+**Return of the Lost FX** - Every FX that was cut during the Filters unification has been re-implemented. Bloom, Circle, Gradient, Shine, Vignette, and Wipe are all back - some as Filters, others finding better homes as Actions or Game Objects.
+
+**New Game Objects** - Several powerful new shader-based game objects:
+- **Gradient** - Highly configurable color gradients in linear, radial, conic, and bilinear shapes, powered by the new `ColorBand` and `ColorRamp` display classes.
+- **Noise, NoiseCell (2D/3D/4D), and NoiseSimplex (2D/3D)** - Generate and animate cellular noise, simplex noise, and random static, with support for normal map output. Great for naturalistic patterns, reflections, clouds, and procedural generation.
+
+**New Filters** - A whole suite of new filters including **ImageLight** for environment mapping and image-based lighting, **PanoramaBlur** for diffuse lighting textures, **CombineColorMatrix** for channel remixing, **GradientMap** for palette-swap effects, **Key** for chroma keying, **NormalTools** for normal map adjustment, and **Quantize** for retro dithered palette effects.
+
+**New Texture Management** - `TextureManager.addFlatColor()` creates proxy textures, and `Texture.setSource()` lets you hot-swap texture sources at runtime.
+
+**Plus** -- `NineSlice` tiling support (thanks @skhoroshavin!), `Actions.FitToRegion()` for quick scaling, `GameObject.isDestroyed` flag, HSV color interpolation, smoother FPS limiting, new deterministic noise functions in `Phaser.Math`, and numerous bug fixes from community feedback.
+
+Full details in the [RC7 Change Log](changelog/4.0/CHANGELOG-v4.0.0-rc.7.md) and the [full v4 Change Log](changelog/4.0/CHANGELOG-v4.0.0.md).
+
+Phaser 4 contains a brand-new and highly efficient WebGL renderer -- the entire renderer from v3 has been replaced. The public API has remained mostly, but not entirely, the same.
 
 ## Installing Phaser 4 Beta from NPM
 
