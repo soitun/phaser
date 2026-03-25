@@ -6,13 +6,11 @@
 
 ## Quick Start
 
-The simplest possible Phaser 4 game -- a single scene with default 1024x768 canvas:
+The simplest possible Phaser 4 game -- a single scene with the default 1024×768 canvas:
 
 ```js
 const config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
     scene: {
         preload: function () {
             this.load.image('logo', 'assets/logo.png');
