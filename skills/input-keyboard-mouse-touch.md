@@ -58,7 +58,7 @@ Key properties:
 - `this.input.gamepad` - the GamepadPlugin instance
 - `this.input.mouse` - the MouseManager reference
 - `this.input.activePointer` - the most recently active Pointer
-- `this.input.mousePointer` - the mouse Pointer (always pointer1)
+- `this.input.mousePointer` - the mouse Pointer (pointers[0], distinct from pointer1 which is the first touch)
 - `this.input.pointer1` through `this.input.pointer10` - individual pointer references
 - `this.input.dragDistanceThreshold` (number, default 0) - pixels a pointer must move before drag starts
 - `this.input.dragTimeThreshold` (number, default 0) - ms a pointer must be held before drag starts
