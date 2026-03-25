@@ -81,8 +81,8 @@
 - `Math.Hash` provides fast hashes of 1, 2, 3, or 4 dimensional input, using trigonometric or PCG methods.
 - `Math.HashCell` provides hashes of 1, 2, 3, or 4 dimensional input, using hash results in a Worley noise field. This produces a continuous but lumpy field.
 - `Math.HashSimplex` provides hashes of 1, 2, or 3 dimensional input, using a simplex noise implementation. This produces a continuous, smooth field.
-- `TextureSource#setSource` method for updating the source of a texture. Note that, while the source will update, derived values such as object sizes will not. It's advisable to switch between textures of identical size to avoid unexpected transforms.
-- `TextureSource#setDataSource` method already existed, but has been changed to be more useful like `setSource`.
+- `Texture#setSource` method for updating the source of a texture. Note that, while the source will update, derived values such as object sizes will not. It's advisable to switch between textures of identical size to avoid unexpected transforms.
+- `Texture#setDataSource` method already existed, but has been changed to be more useful like `setSource`.
 - `TextureManager#addFlatColor` method for creating a flat texture with custom color, alpha, width, and height. This is intended to act as a temporary stand-in for textures you might not have loaded yet.
 - `TextureSource#updateSource` method for switching sources directly.
 - New `Phaser.Types.Textures.TextureSource` and `Phaser.Types.Textures.TextureSourceElement` types to simplify the increasing number of sources for a texture.

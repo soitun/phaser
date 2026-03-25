@@ -107,10 +107,10 @@ var Tint = {
     },
 
     /**
-     * Sets an additive tint on this Game Object.
+     * Sets the tint color on this Game Object.
      *
      * The tint works by taking the pixel color values from the Game Objects texture, and then
-     * multiplying it by the color value of the tint. You can provide either one color value,
+     * combining it with the color value of the tint. You can provide either one color value,
      * in which case the whole Game Object will be tinted in that color. Or you can provide a color
      * per corner. The colors are blended together across the extent of the Game Object.
      *
@@ -119,6 +119,12 @@ var Tint = {
      * `tintBottomLeft` and `tintBottomRight` to set the corner color values independently.
      *
      * To remove a tint call `clearTint`.
+     *
+     * The tint color is combined according to the tint mode.
+     * By default, this is `MULTIPLY`.
+     *
+     * Note that, in Phaser 3, this would also swap the tint mode if it was set
+     * to fill. In Phaser 4, the tint mode is separate: use `setTintMode`.
      *
      * @method Phaser.GameObjects.Components.Tint#setTint
      * @webglOnly
