@@ -137,7 +137,7 @@ var Camera = new Class({
         // Generate a drawing context.
         var baseContext = drawingContext.getClone();
         baseContext.setCamera(camera);
-        
+
         if (useFramebuffers)
         {
             currentContext = drawingContextPool.get(cw, ch);
@@ -280,6 +280,20 @@ var Camera = new Class({
                 quad = parentTransformMatrix.quad;
 
                 tint = drawExternalFilters ? 0xffffffff : getAlphaTint(alpha);
+
+                if (camera.roundPixels)
+                {
+                    // Assume that `roundPixels` conveys the intent to round coordinates.
+                    // The `Filters` game object component sets this accordingly.
+                    quad[0] = Math.round(quad[0]);
+                    quad[1] = Math.round(quad[1]);
+                    quad[2] = Math.round(quad[2]);
+                    quad[3] = Math.round(quad[3]);
+                    quad[4] = Math.round(quad[4]);
+                    quad[5] = Math.round(quad[5]);
+                    quad[6] = Math.round(quad[6]);
+                    quad[7] = Math.round(quad[7]);
+                }
 
                 this.batchHandlerQuadSingleNode.batch(
                     currentContext,

@@ -347,6 +347,16 @@ if (typeof WEBGL_RENDERER)
             var filterCamera = gameObject.filterCamera;
             filterCamera.preRender();
 
+            // Set the camera roundPixels property to reflect desired rounding.
+            // This is necessary to avoid blurring from antialiasing
+            // if coordinates are not integer.
+            var filterCameraRoundPixels = filterCamera.roundPixels;
+            filterCamera.roundPixels = gameObject.willRoundVertices(
+                filterCamera,
+                (gameObject.rotation % (Math.PI * 2) === 0) &&
+                (gameObject.scaleX === 1, gameObject.scaleY === 1)
+            );
+
             if (filtersAutoFocus && filtersFocusContext)
             {
                 var parent = gameObject.parentContainer;
@@ -429,6 +439,9 @@ if (typeof WEBGL_RENDERER)
             // Restore scrollFactor.
             gameObject.scrollFactorX = scrollX;
             gameObject.scrollFactorY = scrollY;
+
+            // Restore camera roundPixels.
+            filterCamera.roundPixels = filterCameraRoundPixels;
 
             // Add the game object's filter camera's render list
             // to the drawingContext's render list.
