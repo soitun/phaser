@@ -2,7 +2,7 @@
  * @typedef {object} Phaser.Types.GameObjects.Gradient.GradientQuadConfig
  * @since 4.0.0
  *
- * @property {Phaser.Types.Display.ColorBandConfig | Phaser.Display.ColorBand | (Phaser.Types.Display.ColorBandConfig | Phaser.Display.ColorBand)[]} [bands={colorStart: 0x000000, colorEnd: 0xffffff}] - Configurations for or instances of ColorBands to use in the gradient. These are used to create a `ColorRamp`.
+ * @property {(Phaser.Types.Display.ColorBandConfig | Phaser.Display.ColorBand | Array.<Phaser.Types.Display.ColorBandConfig | Phaser.Display.ColorBand>)} [bands={colorStart: 0x000000, colorEnd: 0xffffff}] - Configurations for or instances of ColorBands to use in the gradient. These are used to create a `ColorRamp`.
  * @property {number} [offset=0] - The gradient offset. This advances or withdraws the gradient along its shape.
  * @property {number} [repeatMode=0] - The repeat mode. Gradient progress is evaluated as a number, where 0 is the start of the `shape` vector and 1 is the end. Note that conic gradients never leave the range 0-1 unless offset is applied. They may look weird if you do. Repeat mode tells us how to handle that number below 0/above 1. This can be one of the following:
  *   - 0 (EXTEND): values are clamped between 0 and 1, so the ends of the gradient become flat color.
