@@ -152,10 +152,8 @@ var GameObjectCreator = new Class({
 });
 
 /**
- * Static method called directly by the Game Object creator functions.
- * With this method you can register a custom GameObject factory in the GameObjectCreator,
- * providing a name (`factoryType`) and the constructor (`factoryFunction`) in order
- * to be called when you invoke Phaser.Scene.make[ factoryType ] method.
+ * Registers a Game Object creator function on the GameObjectCreator prototype,
+ * making it available for creating Game Objects via the Scene's make property.
  *
  * @method Phaser.GameObjects.GameObjectCreator.register
  * @static

@@ -16,7 +16,7 @@ var Vector2 = require('../../math/Vector2');
  *
  * @param {Phaser.Geom.Circle} circle - The Circle to get the circumference point on.
  * @param {number} angle - The angle from the center of the Circle to the circumference to return the point from. Given in radians.
- * @param {Phaser.Math.Vector2} [out] - A Vector2 to store the results in. If not given a Point will be created.
+ * @param {Phaser.Math.Vector2} [out] - A Vector2 to store the results in. If not given a Vector2 will be created.
  *
  * @return {Phaser.Math.Vector2} A Vector2 object where the `x` and `y` properties are the point on the circumference.
  */

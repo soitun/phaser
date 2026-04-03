@@ -1095,7 +1095,7 @@ var ParticleEmitter = new Class({
 
     /**
      * Takes an existing Emitter Configuration file and updates this Emitter.
-     * Existing properties are overriden while new properties are added. The
+     * Existing properties are overridden while new properties are added. The
      * updated configuration is then passed to the `setConfig` method to reset
      * the Emitter with the updated configuration.
      *
@@ -1467,7 +1467,7 @@ var ParticleEmitter = new Class({
      * @method Phaser.GameObjects.Particles.ParticleEmitter#setRadial
      * @since 3.0.0
      *
-     * @param {boolean} [value=true] - Radial mode (true) or point mode (true).
+     * @param {boolean} [value=true] - Radial mode (true) or point mode (false).
      *
      * @return {this} This Particle Emitter.
      */
@@ -2302,7 +2302,7 @@ var ParticleEmitter = new Class({
     /**
      * Deactivates every particle in this emitter immediately.
      *
-     * This particles are killed but do not emit an event or callback.
+     * These particles are killed but do not emit an event or callback.
      *
      * @method Phaser.GameObjects.Particles.ParticleEmitter#killAll
      * @since 3.0.0
@@ -2634,7 +2634,7 @@ var ParticleEmitter = new Class({
      *
      * @param {number} [count=this.quantity] - The number of Particles to emit.
      * @param {number} [x=this.x] - The x coordinate to emit the Particles from.
-     * @param {number} [y=this.x] - The y coordinate to emit the Particles from.
+     * @param {number} [y=this.y] - The y coordinate to emit the Particles from.
      *
      * @return {(Phaser.GameObjects.Particles.Particle|undefined)} The most recently emitted Particle, or `undefined` if the emitter is at its limit.
      */
@@ -2659,7 +2659,7 @@ var ParticleEmitter = new Class({
      * @since 3.0.0
      *
      * @param {number} [x=this.x] - The x coordinate to emit the Particles from.
-     * @param {number} [y=this.x] - The y coordinate to emit the Particles from.
+     * @param {number} [y=this.y] - The y coordinate to emit the Particles from.
      * @param {number} [count=this.quantity] - The number of Particles to emit.
      *
      * @return {(Phaser.GameObjects.Particles.Particle|undefined)} The most recently emitted Particle, or `undefined` if the emitter is at its limit.
@@ -2677,7 +2677,7 @@ var ParticleEmitter = new Class({
      *
      * @param {number} [count=this.quantity] - The number of Particles to emit.
      * @param {number} [x=this.x] - The x coordinate to emit the Particles from.
-     * @param {number} [y=this.x] - The y coordinate to emit the Particles from.
+     * @param {number} [y=this.y] - The y coordinate to emit the Particles from.
      *
      * @return {(Phaser.GameObjects.Particles.Particle|undefined)} The most recently emitted Particle, or `undefined` if the emitter is at its limit.
      *
@@ -3094,7 +3094,7 @@ var ParticleEmitter = new Class({
     /**
      * The y coordinate the particles are emitted from.
      *
-     * This is relative to the Emitters x coordinate and that of any parent.
+     * This is relative to the Emitters y coordinate and that of any parent.
      *
      * Accessing this property should typically return a number.
      * However, it can be set to any valid EmitterOp onEmit type.

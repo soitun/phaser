@@ -29,7 +29,7 @@ function getLength (x1, y1, x2, y2)
  * @param {Phaser.Geom.Triangle} triangle - The Triangle to find the incenter of.
  * @param {Phaser.Math.Vector2} [out] - An optional Vector2 point in which to store the coordinates.
  *
- * @return {Phaser.Math.Vector2} The center of the triangle in a Vector2.
+ * @return {Phaser.Math.Vector2} The incenter of the triangle in a Vector2.
  */
 var InCenter = function (triangle, out)
 {

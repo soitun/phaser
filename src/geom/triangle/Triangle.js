@@ -14,7 +14,7 @@ var Random = require('./Random');
 
 /**
  * @classdesc
- * A triangle is a plane created by connecting three points.
+ * A Triangle is a closed polygon defined by three vertices (points) in 2D space. It is not a Game Object and cannot be rendered directly. To draw a Triangle, use a Graphics Game Object.
  * The first two arguments specify the first point, the middle two arguments
  * specify the second point, and the last two arguments specify the third point.
  *
@@ -169,7 +169,7 @@ var Triangle = new Class({
     },
 
     /**
-     * Returns a random point along the triangle.
+     * Returns a random point from within the area of the triangle.
      *
      * @method Phaser.Geom.Triangle#getRandomPoint
      * @since 3.0.0

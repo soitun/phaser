@@ -25,7 +25,7 @@ var FILE_CONST = {
     LOADER_LOADING: 1,
 
     /**
-     * The Loader is processing files is has loaded.
+     * The Loader is processing files it has loaded.
      *
      * @name Phaser.Loader.LOADER_PROCESSING
      * @type {number}
@@ -70,7 +70,7 @@ var FILE_CONST = {
     FILE_PENDING: 10,
 
     /**
-     * File has been started to load by the loader (onLoad called)
+     * File has started loading by the loader (onLoad called)
      *
      * @name Phaser.Loader.FILE_LOADING
      * @type {number}

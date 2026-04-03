@@ -851,7 +851,7 @@ var GameObject = new Class({
      * Adds this Game Object to the Update List belonging to the Scene.
      *
      * When a Game Object is added to the Update List it will have its `preUpdate` method called
-     * every game frame. This method is passed two parameters: `delta` and `time`.
+     * every game frame. This method is passed two parameters: `time` and `delta`.
      *
      * If you wish to run your own logic within `preUpdate` then you should always call
      * `super.preUpdate(time, delta)` within it, or it may fail to process required operations,

@@ -88,8 +88,6 @@ var VideoRender = require('./VideoRender');
  * You can set the `noAudio` parameter to `true` even if the video does contain audio. It will still allow the video
  * to play immediately, but the audio will not start.
  *
- * Note that due to a bug in IE11 you cannot play a video texture to a Sprite in WebGL. For IE11 force Canvas mode.
- *
  * More details about video playback and the supported media formats can be found on MDN:
  *
  * https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement

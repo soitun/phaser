@@ -1157,7 +1157,7 @@ var Graphics = new Class({
      *
      * @param {Phaser.Math.Vector2[]} points - The points to fill.
      * @param {boolean} [closeShape=false] - When `true`, the shape is closed by joining the last point to the first point.
-     * @param {boolean} [closePath=false] - When `true`, the path is closed before being stroked.
+     * @param {boolean} [closePath=false] - When `true`, the path is closed before being filled.
      * @param {number} [endIndex] - The index of `points` to stop at. Defaults to `points.length`.
      *
      * @return {this} This Game Object.

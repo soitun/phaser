@@ -183,10 +183,8 @@ var GameObjectFactory = new Class({
 });
 
 /**
- * Static method called directly by the Game Object factory functions.
- * With this method you can register a custom GameObject factory in the GameObjectFactory,
- * providing a name (`factoryType`) and the constructor (`factoryFunction`) in order
- * to be called when you call to Phaser.Scene.add[ factoryType ] method.
+ * Registers a Game Object factory function on the GameObjectFactory prototype,
+ * making it available for creating Game Objects via the Scene's add property.
  *
  * @method Phaser.GameObjects.GameObjectFactory.register
  * @static
@@ -204,9 +202,7 @@ GameObjectFactory.register = function (factoryType, factoryFunction)
 };
 
 /**
- * Static method called directly by the Game Object factory functions.
- * With this method you can remove a custom GameObject factory registered in the GameObjectFactory,
- * providing its `factoryType`.
+ * Removes a Game Object factory function from the GameObjectFactory prototype.
  *
  * @method Phaser.GameObjects.GameObjectFactory.remove
  * @static

@@ -185,8 +185,8 @@ var File = new Class({
         this.percentComplete = -1;
 
         /**
-         * For CORs based loading.
-         * If this is undefined then the File will check BaseLoader.crossOrigin and use that (if set)
+         * For CORS based loading.
+         * If this is undefined then the File will check LoaderPlugin.crossOrigin and use that (if set)
          *
          * @name Phaser.Loader.File#crossOrigin
          * @type {(string|undefined)}

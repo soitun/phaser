@@ -841,7 +841,7 @@ var Group = new Class({
      * @param {(string|number)} [frame=defaultFrame] - A texture frame assigned to a new Game Object (if one is created).
      * @param {boolean} [visible=true] - The {@link Phaser.GameObjects.Components.Visible#visible} state of a new Game Object (if one is created).
      *
-     * @return {?any} The first matching group member, or a newly created member, or null.
+     * @return {?any} The nth matching group member, or a newly created member, or null.
      */
     getFirstNth: function (nth, state, createIfNull, x, y, key, frame, visible)
     {
@@ -866,7 +866,7 @@ var Group = new Class({
      * @param {(string|number)} [frame=defaultFrame] - A texture frame assigned to a new Game Object (if one is created).
      * @param {boolean} [visible=true] - The {@link Phaser.GameObjects.Components.Visible#visible} state of a new Game Object (if one is created).
      *
-     * @return {?any} The first matching group member, or a newly created member, or null.
+     * @return {?any} The last matching group member, or a newly created member, or null.
      */
     getLast: function (state, createIfNull, x, y, key, frame, visible)
     {
@@ -892,7 +892,7 @@ var Group = new Class({
      * @param {(string|number)} [frame=defaultFrame] - A texture frame assigned to a new Game Object (if one is created).
      * @param {boolean} [visible=true] - The {@link Phaser.GameObjects.Components.Visible#visible} state of a new Game Object (if one is created).
      *
-     * @return {?any} The first matching group member, or a newly created member, or null.
+     * @return {?any} The nth matching group member (searching from the end), or a newly created member, or null.
      */
     getLastNth: function (nth, state, createIfNull, x, y, key, frame, visible)
     {
@@ -1094,7 +1094,7 @@ var Group = new Class({
     },
 
     /**
-     * Whether this group's size at its {@link Phaser.GameObjects.Group#maxSize maximum}.
+     * Whether this group's size is at its {@link Phaser.GameObjects.Group#maxSize maximum}.
      *
      * @method Phaser.GameObjects.Group#isFull
      * @since 3.0.0

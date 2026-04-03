@@ -207,7 +207,7 @@ var Key = new Class({
         this._justDown = false;
 
         /**
-         * True if the key has just been pressed (NOTE: requires to be reset, see justDown getter)
+         * True if the key has just been released (NOTE: requires to be reset, see justUp getter)
          *
          * @name Phaser.Input.Keyboard.Key#_justUp
          * @type {boolean}

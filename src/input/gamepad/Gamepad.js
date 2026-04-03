@@ -341,14 +341,14 @@ var Gamepad = new Class({
     /**
      * Gets the value of an axis based on the given index.
      * The index must be valid within the range of axes supported by this Gamepad.
-     * The return value will be a float between 0 and 1.
+     * The return value will be a float between -1 and 1.
      *
      * @method Phaser.Input.Gamepad.Gamepad#getAxisValue
      * @since 3.10.0
      *
      * @param {number} index - The index of the axes to get the value for.
      *
-     * @return {number} The value of the axis, between 0 and 1.
+     * @return {number} The value of the axis, between -1 and 1.
      */
     getAxisValue: function (index)
     {

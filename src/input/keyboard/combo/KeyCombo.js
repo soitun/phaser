@@ -63,7 +63,7 @@ var KeyCombo = new Class({
         }
 
         /**
-         * A reference to the Keyboard Manager
+         * A reference to the Keyboard Plugin
          *
          * @name Phaser.Input.Keyboard.KeyCombo#manager
          * @type {Phaser.Input.Keyboard.KeyboardPlugin}

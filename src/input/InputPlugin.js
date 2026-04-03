@@ -2493,7 +2493,7 @@ var InputPlugin = new Class({
      * @method Phaser.Input.InputPlugin#setHitAreaFromTexture
      * @since 3.0.0
      *
-     * @param {(Phaser.GameObjects.GameObject|Phaser.GameObjects.GameObject[])} gameObjects - An array of Game Objects to set as having an ellipse hit area.
+     * @param {(Phaser.GameObjects.GameObject|Phaser.GameObjects.GameObject[])} gameObjects - An array of Game Objects to set as having a Rectangle hit area based on their texture frame.
      * @param {Phaser.Types.Input.HitAreaCallback} [callback] - The hit area callback. If undefined it uses Rectangle.Contains.
      *
      * @return {this} This InputPlugin object.

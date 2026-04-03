@@ -255,7 +255,7 @@ var TileSprite = new Class({
          *
          * This component provides features to apply animations to this TileSprite.
          * It is responsible for playing, loading, queuing animations for later playback,
-         * mixing between animations and setting the current animation frame to this Sprite.
+         * mixing between animations and setting the current animation frame to this TileSprite.
          *
          * @name Phaser.GameObjects.TileSprite#anims
          * @type {Phaser.Animations.AnimationState}

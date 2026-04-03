@@ -1047,7 +1047,7 @@ var Pointer = new Class({
 
     /**
      * If the Pointer has a button pressed down at the time this method is called, it will return the
-     * horizontal distance between the Pointer's `downX` and `downY` values and the current position.
+     * horizontal distance between the Pointer's `downX` value and the current `x` position.
      *
      * If no button is held down, it will return the last recorded horizontal distance, based on where
      * the Pointer was when the button was released.
@@ -1071,7 +1071,7 @@ var Pointer = new Class({
 
     /**
      * If the Pointer has a button pressed down at the time this method is called, it will return the
-     * vertical distance between the Pointer's `downX` and `downY` values and the current position.
+     * vertical distance between the Pointer's `downY` value and the current `y` position.
      *
      * If no button is held down, it will return the last recorded vertical distance, based on where
      * the Pointer was when the button was released.

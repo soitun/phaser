@@ -470,7 +470,7 @@ var RenderTexture = new Class({
      * @param {Phaser.GameObjects.GameObject} entry - Any renderable GameObject.
      * @param {Phaser.Types.Textures.CaptureConfig} config - The configuration object for the capture.
      *
-     * @return {this} This Dynamic Texture instance.
+     * @return {this} This Render Texture instance.
      */
     capture: function (entry, config)
     {

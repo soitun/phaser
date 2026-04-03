@@ -87,7 +87,7 @@ var GamepadPlugin = new Class({
         this.settings = this.scene.sys.settings;
 
         /**
-         * A reference to the Scene Input Plugin that created this Keyboard Plugin.
+         * A reference to the Scene Input Plugin that created this Gamepad Plugin.
          *
          * @name Phaser.Input.Gamepad.GamepadPlugin#sceneInputPlugin
          * @type {Phaser.Input.InputPlugin}
