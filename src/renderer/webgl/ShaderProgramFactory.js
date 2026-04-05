@@ -64,7 +64,7 @@ var ShaderProgramFactory = new Class({
      * @method Phaser.Renderer.WebGL.ShaderProgramFactory#has
      * @since 4.0.0
      * @param {string} key - The unique key of the shader program.
-     * @returns {boolean} `true` if a shader program with this key exists in the cache, otherwise `false`.
+     * @return {boolean} `true` if a shader program with this key exists in the cache, otherwise `false`.
      */
     has: function (key)
     {
@@ -82,7 +82,7 @@ var ShaderProgramFactory = new Class({
      * @param {BaseShaderConfig} base - The base shader configuration.
      * @param {Phaser.Types.Renderer.WebGL.ShaderAdditionConfig[]} [additions] - An array of shader addition configurations.
      * @param {string[]} [features] - An array of enabled shader feature keys.
-     * @returns {Phaser.Renderer.WebGL.Wrappers.WebGLProgramWrapper} The compiled shader program wrapper.
+     * @return {Phaser.Renderer.WebGL.Wrappers.WebGLProgramWrapper} The compiled shader program wrapper.
      */
     getShaderProgram: function (base, additions, features)
     {
@@ -112,7 +112,7 @@ var ShaderProgramFactory = new Class({
      * @param {BaseShaderConfig} base - The base shader configuration.
      * @param {Phaser.Types.Renderer.WebGL.ShaderAdditionConfig[]} [additions] - An array of shader addition configurations.
      * @param {string[]} [features] - An array of enabled shader feature keys.
-     * @returns {string} The unique cache key for this shader configuration.
+     * @return {string} The unique cache key for this shader configuration.
      */
     getKey: function (base, additions, features)
     {
@@ -149,7 +149,7 @@ var ShaderProgramFactory = new Class({
      * @param {BaseShaderConfig} base - The base shader configuration.
      * @param {Phaser.Types.Renderer.WebGL.ShaderAdditionConfig[]} [additions] - An array of shader addition configurations.
      * @param {string[]} [features] - An array of enabled shader feature keys.
-     * @returns {Phaser.Renderer.WebGL.Wrappers.WebGLProgramWrapper} The newly compiled and cached shader program wrapper.
+     * @return {Phaser.Renderer.WebGL.Wrappers.WebGLProgramWrapper} The newly compiled and cached shader program wrapper.
      */
     createShaderProgram: function (name, base, additions, features)
     {
