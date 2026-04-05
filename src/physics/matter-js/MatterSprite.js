@@ -16,6 +16,20 @@ var Vector2 = require('../../math/Vector2');
  * @classdesc
  * A Matter Physics Sprite Game Object.
  *
+ * This is a Sprite that has been enabled for use with the Matter.js physics engine. It combines
+ * the full rendering and animation capabilities of a standard Phaser Sprite with a Matter.js
+ * physics body, allowing it to participate in complex physics simulations including polygon
+ * collisions, joints, springs, and constraints.
+ *
+ * Unlike Arcade Physics, which uses simple axis-aligned bounding boxes or circles, Matter.js
+ * supports arbitrary convex and concave polygon shapes, compound bodies, and realistic rigid-body
+ * dynamics. Use this class when you need that level of physics fidelity for an animated Game Object.
+ *
+ * On construction a rectangular body matching the sprite's frame dimensions is created by default.
+ * You can override this by providing a `shape` property in the `options` configuration object,
+ * or by calling one of the `setBody`, `setRectangle`, `setCircle`, `setPolygon`, or `setTrapezoid`
+ * methods after creation.
+ *
  * A Sprite Game Object is used for the display of both static and animated images in your game.
  * Sprites can have input events and physics bodies. They can also be tweened, tinted, scrolled
  * and animated.

@@ -5,7 +5,10 @@
  */
 
 /**
- * Provides methods used for setting the enable properties of an Arcade Physics Body.
+ * Provides methods for enabling, disabling, and refreshing the Arcade Physics Body
+ * belonging to a Game Object. This component is mixed into Game Objects that use
+ * Arcade Physics, giving them the ability to control whether their physics body is
+ * active in the simulation and participates in collision and overlap detection.
  *
  * @namespace Phaser.Physics.Arcade.Components.Enable
  * @since 3.0.0
@@ -23,7 +26,7 @@ var Enable = {
      * @method Phaser.Physics.Arcade.Components.Enable#setDirectControl
      * @since 3.70.0
      *
-     * @param {boolean} [value=true] - `true` if the Body calculate velocity based on changes in position, otherwise `false`.
+     * @param {boolean} [value=true] - `true` if the Body calculates velocity based on changes in position, otherwise `false`.
      *
      * @return {this} This Game Object.
      */
@@ -35,8 +38,11 @@ var Enable = {
     },
 
     /**
-     * Enables this Game Object's Body.
-     * If you reset the Body you must also pass `x` and `y`.
+     * Enables this Game Object's Arcade Physics Body, allowing it to participate in
+     * collision and overlap detection within the physics simulation. Optionally resets
+     * the Body and repositions the Game Object at the given coordinates. If you reset
+     * the Body you must also pass `x` and `y`. You can also optionally set the Game
+     * Object's `active` and `visible` properties at the same time.
      *
      * @method Phaser.Physics.Arcade.Components.Enable#enableBody
      * @since 3.0.0
@@ -79,7 +85,10 @@ var Enable = {
     },
 
     /**
-     * Stops and disables this Game Object's Body.
+     * Stops and disables this Game Object's Arcade Physics Body. The body's velocity is
+     * set to zero and it is removed from collision and overlap detection within the physics
+     * simulation. Optionally sets the Game Object's `active` and `visible` properties to
+     * false at the same time, which is useful when deactivating pooled Game Objects.
      *
      * @method Phaser.Physics.Arcade.Components.Enable#disableBody
      * @since 3.0.0

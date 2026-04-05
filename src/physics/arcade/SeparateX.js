@@ -12,7 +12,7 @@ var ProcessX = require('./ProcessX');
  *
  * Separation involves moving two overlapping bodies so they don't overlap anymore and adjusting their velocities based on their mass. This is a core part of collision detection.
  *
- * The bodies won't be separated if there is no horizontal overlap between them, if they are static, or if either one uses custom logic for its separation.
+ * The bodies won't be separated if there is no horizontal overlap between them, if both are immovable, or if either one uses custom separation logic via `customSeparateX`.
  *
  * @function Phaser.Physics.Arcade.SeparateX
  * @since 3.0.0

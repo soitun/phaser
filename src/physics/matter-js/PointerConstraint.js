@@ -181,7 +181,7 @@ var PointerConstraint = new Class({
      * @method Phaser.Physics.Matter.PointerConstraint#onUp
      * @since 3.22.0
      *
-     * @param {Phaser.Input.Pointer} pointer - A reference to the Pointer that was pressed.
+     * @param {Phaser.Input.Pointer} pointer - A reference to the Pointer that was released.
      */
     onUp: function (pointer)
     {
@@ -193,12 +193,14 @@ var PointerConstraint = new Class({
 
     /**
      * Scans all active bodies in the current Matter World to see if any of them
-     * are hit by the Pointer. The _first one_ found to hit is set as the active contraint
+     * are hit by the Pointer. The _first one_ found to hit is set as the active constraint
      * body.
      *
      * @method Phaser.Physics.Matter.PointerConstraint#getBody
      * @fires Phaser.Physics.Matter.Events#DRAG_START
      * @since 3.16.2
+     *
+     * @param {Phaser.Input.Pointer} pointer - A reference to the Pointer that initiated the drag.
      *
      * @return {boolean} `true` if a body was found and set, otherwise `false`.
      */

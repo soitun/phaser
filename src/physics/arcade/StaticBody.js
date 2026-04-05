@@ -326,7 +326,7 @@ var StaticBody = new Class({
          * colliding body. If that body is also not pushable, then the separation will be split
          * between them evenly.
          *
-         * If you want your body to never move or seperate at all, see the `setImmovable` method.
+         * If you want your body to never move or separate at all, see the `setImmovable` method.
          *
          * By default, Static Bodies are not pushable.
          *

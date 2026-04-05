@@ -15,10 +15,19 @@ var Vector2 = require('../../math/Vector2');
  * @classdesc
  * A Matter Physics Image Game Object.
  *
- * An Image is a light-weight Game Object useful for the display of static images in your game,
- * such as logos, backgrounds, scenery or other non-animated elements. Images can have input
- * events and physics bodies, or be tweened, tinted or scrolled. The main difference between an
- * Image and a Sprite is that you cannot animate an Image as they do not have the Animation component.
+ * A MatterImage is a standard Phaser Image Game Object with a Matter.js physics body automatically
+ * created and attached to it. It combines the lightweight rendering of a static image with the full
+ * suite of Matter.js rigid body physics simulation, including gravity, friction, bounce, mass, and
+ * accurate collision response against other Matter bodies.
+ *
+ * By default, a rectangular physics body matching the image's display dimensions is created. You can
+ * supply a custom shape via the `options` parameter to use a circle, polygon, or a compound body
+ * defined in a physics editor such as PhysicsEditor.
+ *
+ * Use a MatterImage for non-animated physics objects in your scene, such as platforms, crates, walls,
+ * debris, or collectibles. If you need frame-based animation alongside Matter.js physics, use
+ * `Phaser.Physics.Matter.Sprite` instead. The main difference between a MatterImage and a MatterSprite
+ * is that MatterImage does not have the Animation component and cannot play texture-based animations.
  *
  * @class Image
  * @extends Phaser.GameObjects.Image

@@ -167,7 +167,10 @@ var Check = function ()
 };
 
 /**
- * The main check function. Runs through one of the four possible tests and returns the results.
+ * Executes the vertical separation and velocity exchange for the two bodies, based on
+ * the collision side determined by the `Check` function. Handles all combinations of
+ * pushable and non-pushable bodies, distributing overlap and recalculating post-collision
+ * velocities accordingly.
  *
  * @function Phaser.Physics.Arcade.ProcessY.Run
  * @ignore

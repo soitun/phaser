@@ -16,8 +16,8 @@ var IsPlainObject = require('../../utils/object/IsPlainObject');
  * @classdesc
  * An Arcade Physics Group object.
  *
- * The primary use of a Physics Group is a way to collect together physics enable objects
- * that share the same intrinsic structure into a single pool. They can they be easily
+ * The primary use of a Physics Group is a way to collect together physics-enabled objects
+ * that share the same intrinsic structure into a single pool. They can then be easily
  * compared against other Groups, or Game Objects.
  *
  * All Game Objects created by, or added to this Group will automatically be given **dynamic**

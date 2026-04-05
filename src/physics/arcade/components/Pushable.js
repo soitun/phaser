@@ -5,7 +5,12 @@
  */
 
 /**
- * Provides methods used for setting the pushable property of an Arcade Physics Body.
+ * The Pushable component provides methods for controlling whether an Arcade Physics body can be
+ * displaced by other bodies during collision resolution. A pushable body will have velocity applied
+ * to it as a result of colliding with other bodies. A non-pushable body will instead reflect its
+ * received velocity back to the colliding body, effectively acting as an immovable surface for
+ * purposes of velocity transfer while still participating in positional separation. This component
+ * is mixed into Game Objects that use Arcade Physics.
  *
  * @namespace Phaser.Physics.Arcade.Components.Pushable
  * @since 3.50.0
@@ -24,7 +29,7 @@ var Pushable = {
      * @method Phaser.Physics.Arcade.Components.Pushable#setPushable
      * @since 3.50.0
      *
-     * @param {boolean} [value=true] - Sets if this body can be pushed by collisions with another Body.
+     * @param {boolean} [value=true] - Whether this body can be pushed by collisions with another Body.
      *
      * @return {this} This Game Object.
      */

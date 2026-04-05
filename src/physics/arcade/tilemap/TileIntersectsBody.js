@@ -13,7 +13,7 @@
  * @param {{ left: number, right: number, top: number, bottom: number }} tileWorldRect - A rectangle object that defines the tile placement in the world.
  * @param {Phaser.Physics.Arcade.Body} body - The body to check for intersection against.
  *
- * @return {boolean} Returns `true` of the tile intersects with the body, otherwise `false`.
+ * @return {boolean} Returns `true` if the tile intersects with the body, otherwise `false`.
  */
 var TileIntersectsBody = function (tileWorldRect, body)
 {
