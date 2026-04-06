@@ -12,6 +12,7 @@ Thumbs.db
 node_modules/
 
 # Build
+test-gen-logs/
 /npm-debug.log
 build/
 out/
